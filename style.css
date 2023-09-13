@@ -1,12 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+   
+    
+    
+}
+body, html {
+    
+    height: 100%;
+    
+    width: 100%;
 }
 .container{
-   
+    height: 100%;
     display:grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(auto-fit,minmax(150px, 2fr));
+    grid-template-rows: 1fr 3fr;
 }
 .header{
     background-color: beige;
@@ -15,7 +24,10 @@
 .content{
     background-color: darkgrey;
     grid-column: 2/3;
-    
+    display:flex;
+}
+.card{
+    background-color: white;
 }
 .sidebar{
    
@@ -25,4 +37,25 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.card{
+    border:1px solid black;
+    width: 5em;
+    height: 4em;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.announcments{
+    border: black solid 1px;
+}
+.trending{
+    border: 1px solid black;
+}
+#flexChild{
+    display:flex;
+    flex-direction:column;
 }
